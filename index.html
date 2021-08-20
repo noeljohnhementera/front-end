@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>Capstone 1 Project</title>
+		<title>Code Hub | Capstone 1 Project | Zuitt</title>
+		<!-- Favicon -->
+		<link rel="icon" href="images/favicon.png">
 		 <!-- Required meta tags -->
     	<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,14 +11,18 @@
     	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     	<!-- Font Awesome -->
     	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    	<!-- Google Fonts -->
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">	
     	<!-- CSS external file -->
     	<link rel="stylesheet" type="text/css" href="./style.css">
 	</head>
 	<body>
 
 		<!-- Start of NavBar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		  	<a class="navbar-brand" href="#">Portfolio</a>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+		  	<a class="navbar-brand"><img src="images/logo-icon.png">Code Hub</a>
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		  	</button>
@@ -26,74 +32,63 @@
 		        		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">About</a>
+		        		<a class="nav-link text-mute" href="#">About</a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">Contact</a>
+		        		<a class="nav-link text-mute" href="#">Reviews</a>
 		      		</li>
 		      		<li class="nav-item dropdown">
-		        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        		<a class="nav-link dropdown-toggle text-mute" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Services
 		        		</a>
 		        	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          		<a class="dropdown-item" href="#">Front-End</a>
-		          		<a class="dropdown-item" href="#">Back-End</a>
-		          		<a class="dropdown-item" href="#">Full-Stack</a>
+		          		<a class="dropdown-item" href="#">Front-end Web Dev</a>
+		          		<a class="dropdown-item" href="#">Back-end Web Dev</a>
+		          		<a class="dropdown-item" href="#">Full-stack Web Dev</a>
 		        	</div>
 		      		</li>
+		      		<button class="btn btn-light mr-2">Contact Me</button>
 		    	</ul>
 		  	</div>
 		</nav>
 		<!-- End of NavBar -->
 
 		<!-- Start of Image Slider / Carousel -->
-		<div id="meslide" class="carousel slide" data-ride="carousel">
-			<ul class="carousel-indicators">
-				<li data-target="#meslide" data-slide-to="0" class="active"></li>
-				<li data-target="#meslide" data-slide-to="1"></li>
-				<li data-target="#meslide" data-slide-to="2"></li>
-			</ul>
+		<div data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="images/profile1.jpg">
 					<div class="carousel-caption">
 						<h1 class="display-3">Noel John Hementera</h1>
-						<h2>Web Developer</h2>
-						<button class="btn btn-outline-primary btn-lg">Services</button>
-						<button class="btn btn-light btn-lg">Reviews</button>
+						<h2>Software Engineer</h2>
+						<button class="btn btn-light">My Portfolio</button>
 					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="images/profile2.jpg">
-				</div>
-				<div class="carousel-item">
-					<img src="images/profile3.jpg">
 				</div>
 			</div>	
 		</div>
 		<!-- End of Image Slider / Carousel -->
+
 		<!-- Start of Short Intro About Me -->
 		<section>
-			<div class="container-fluid" id="intro">
+			<div class="container-fluid pad-intro text-center cg-background pad-intro">
 				<div class="row">
 					<div class="col-12">
-						<p class="lead text-center">Hi there! I am <strong>Noel John Hementera</strong>. You can also call me NJ. I am a <strong>Software Engineer</strong> where in I provide expertise in
-						</p>
+						<p class="para-font">Hi there! You can also call me <strong>NJ</strong>. I am a <strong>Software Engineer</strong> where in I provide expertise in</p>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row pad-intro">
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-						<a href="#front"><button class="btn btn-outline-primary btn-lg">Front-end Web Development
+						<a href="#front"><button class="btn btn-outline-light btn-lg mb-3">Front-end Web Development
 						</button></a>
 					</div>
 
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-						<a href="#back"><button class="btn btn-outline-primary btn-lg">Back-end Web Development
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mb-3">
+						<a href="#back"><button class="btn btn-outline-light btn-lg">Back-end Web Development
 						</button></a>
 					</div>
 
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-						<a href="#full-stack"><button class="btn btn-outline-primary btn-lg">Full-stack Web Development
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mb-3">
+						<a href="#full-stack"><button class="btn btn-outline-light btn-lg">Full-stack Web Development
 						</button></a>
 					</div>
 				</div>
@@ -102,98 +97,97 @@
 		<!-- End of Short Intro About Me section-->
 		<!-- Start of Languages I know section-->
 		<section>	
-			<div class="container-fluid pad">
+			<div class="container-fluid">
 				<div class="row text-center">
 					<div class="col-12">
-						<h2 class="display-4">Languages I Know</h2>
-						<hr>
+						<h2 class="display-4 pad-language-h2">Languages I Know</h2>
+						<hr class="hr-solid">
 					</div>
 				</div>
 			</div>
 
-			<div class="container-fluid d-flex flex-wrap pad">
-				<div class="pad text-center">
+			<div class="container-fluid d-flex flex-wrap justify-content-center pad-language-logo">
+				<div class="text-center">
 					<i class="fab fa-html5"></i>
 					<h3>HTML5</h3>
 				</div>
-				<div class="pad text-center">
+				<div class="text-center">
 					<i class="fab fa-css3-alt"></i>
 					<h3>CSS3</h3>
 				</div>
-				<div class="pad text-center">
+				<div class="text-center">
 					<i class="fab fa-bootstrap"></i>
 					<h3>Bootstrap</h3>
 				</div>
-				<div class="pad text-center">
+				<div class="text-center">
 					<i class="fab fa-js-square"></i>
 					<h3>JavaScript</h3>
 				</div>
-				<div class="pad text-center">
+				<div class="text-center">
 					<i class="fab fa-node"></i>
 					<h3>Node.js</h3>
 				</div>
-				<div class="pad text-center">
+				<div class="text-center">
 					<i class="fab fa-react"></i>
 					<h3>React.js</h3>
 				</div>
-				<div class="pad text-center">
-					<img src="images/mongodb.png" class="img-fluid">
+				<div class="text-center">
+					<i class="fab fa-html5"></i>
 					<h3>MongoDB</h3>
 				</div>
-				<div class="pad text-center">
-					<img src="images/expressjs.png" class="img-fluid">
+				<div class="text-center">
+					<i class="fab fa-css3-alt"></i>
 					<h3>Express.js</h3>
 				</div>
 			</div>
 		</section>
 		<!-- End of Languages I know section -->
 		<!-- Start of Services I offer section -->
-		<section>
-			<div class="container-fluid pad">
+		<section class="cg-background pad">
+			<div class="container-fluid">
 				<div class="row text-center">
 					<div class="col-12">
 						<h2 class="display-4">Services</h2>
+						<hr class="hr-solid">
 					</div>
-					<hr>
 				</div>	
 			</div>
 
-			<div class="container-fluid pad">
-				<div class="row pad">
+			<div class="container-fluid">
+				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-4">
-						<div class="card">
+						<div class="card mb-3">
 							<img id="front" class="card-img-top" src="images/img1.jpg">
 							<div class="card-body">
 								<h3 class="card-title">Front-end Web Dev</h3>
-								<p class="card-text">I can create modern styles by using the advance front-end web development languages from HTML5, CSS3 to Bootstrap 4.	
-								</p>
-								<button class="btn btn-outline-primary">See My Portfolio
+								<p class="card-text">I can create modern styles by using the advance front-end web development languages from HTML5, CSS3 to Bootstrap 4.</p>
+								<button class="btn btn-outline-light">See My Portfolio
 								</button>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-xs-12 col-sm-12 col-md-4">
-						<div class="card">
+						<div class="card mb-3">
 							<img id="back"class="card-img-top" src="images/img2.jpg">
 							<div class="card-body">
 								<h3 class="card-title">Back-end Web Dev</h3>
 								<p class="card-text">I specialize in back-end web development by the use of different ;anguages such as JavaScript, MongoDB, Node.js, and Express.js	
 								</p>
-								<button class="btn btn-outline-primary">See My Portfolio
+								<button class="btn btn-outline-light">See My Portfolio
 								</button>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-xs-12 col-sm-12 col-md-4">
-						<div class="card">
+						<div class="card mb-3">
 							<img id="full-stack" class="card-img-top" src="images/img3.jpg">
 							<div class="card-body">
 								<h3 class="card-title">Full-stack Web Dev</h3>
-								<p class="card-text">I can create a fully-functionable website starting from front-end to the back-end of the website	
+								<p class="card-text">I can create a fully-functionable website starting from front-end to the back-end. Moreover, I can create modern website styles.	
 								</p>
-								<button class="btn btn-outline-primary">See My Portfolio
+								<button class="btn btn-outline-light">See My Portfolio
 								</button>
 							</div>
 						</div>
@@ -204,14 +198,14 @@
 		<!-- End of Services I offer section-->
 		<!-- Start of Reviews and Testimonials I offer section -->
 		<section>
-			<div class="container-fluid pad">
+			<div class="container-fluid pad" >
 				<div class="row">
 					<div class="col-12">
 						<h2 class="display-4 text-center">Reviews and Testimonials</h2>
-						<hr>	
+						<hr class="hr-solid">	
 					</div>
 
-					<div class="col-xs-12 col-sm-12 col-md-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 mb-3">
 						<p class="lead">John Llyod Cruz</p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -219,53 +213,52 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<p>Nakita niya na may kailangan ayusin sa website ko kaya sinubukan ko kung makakatulong siya na resolbahin ito. Hindi ako nagkamali sa pagpili sa kanya. Isang mahusay na front-end web developer</p>
-						<button class="btn btn-outline-primary btn-sm">More Reviews</button>
 					</div>
 
-					<div class="col-xs-12 col-sm-12 col-md-4">
-						<p class="lead">Antipatiko Caballero</p>
+					<div class="col-xs-12 col-sm-12 col-md-4 mb-3">
+						<p class="lead">Antipatiko Caballero Romantiko</p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half-alt"></i>
-						<p>Noong una, wala akong tiwala sa kakayahan ni Noel pero noong nakita ko nayung final output ng website, nagdalawang-isip ako sa sinabi ko dati. 5-star para sayo!</p>
-						<button class="btn btn-outline-primary btn-sm">More Reviews</button>
+						<p>Noong una, wala akong tiwala sa kakayahan ni Noel pero noong nakita ko nayung final output ng website, nagdalawang-isip ako sa sinabi ko dati.</p>
 					</div>
 
-					<div class="col-xs-12 col-sm-12 col-md-4">
-						<p class="lead">Juan Dela Cruz</p>
+					<div class="col-xs-12 col-sm-12 col-md-4 mb-3">
+						<p class="lead">Jose Panalo</p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<p>Si Noel John ay isang maaasahang software engineer. Irerekomenda ko siya sa mga kasama ko!</p>
-						<button class="btn btn-outline-primary btn-sm">More Reviews</button>
+						<p>Si Noel John ay isang maaasahang software engineer.  Irerekomenda ko siya sa mga kasama ko! 5-stars para sayo!</p>
 					</div>
+					<button class="btn btn-outline-light btn-inline mx-auto">See More Reviews</button>
 				</div>
 			</div>
 		</section>
-		<!-- Start of Reviews and Testimonials I offer section -->
+		<!-- End of Reviews and Testimonials I offer section -->
 		<!-- Start of contact me section -->
-		<section>
-			<div class="container-fluid pad">
-				<h2 class="display-4 text-center">Contact Me</h2>
+		<section class="cg-background pad">
+			<div class="container-fluid">
+				<h2 class="display-4 text-center">Let's Work Together!</h2>
+				<hr class="hr-solid">
 			</div>
 
-			<form class="col-xs-12 col-md-9 mx-auto pad">
+			<form class="col-xs-12 col-md-9 mx-auto">
 				<div class="form-group">
-					<label for="txt-email">Full Name:</label>
+					<label class="font-black" for="txt-email">Full Name:</label>
 					<input type="text" class="form-control" id="txt-email">
 				</div>
 
 				<div class="form-group">
-					<label for="txt-email">Email Address</label>
+					<label class="font-black" for="txt-email">Email Address</label>
 					<input type="email" class="form-control" id="txt-email">
 				</div>
 
 				<div class="form-group">
-					<label for="txt.select">Type of Service:</label>
+					<label class="font-black" for="txt.select">Type of Service:</label>
 					<select class="form-control" id="txt-select">
 						<option>Front-end Web Development</option>
 						<option>Back-end Web Development</option>
@@ -274,48 +267,58 @@
 				</div>
 
 				<div class="form-group">
-					<label for="txt-textarea">Message</label>
+					<label class="font-black" for="txt-textarea">Message</label>
 					<textarea class="form-control" id="txt-textarea" rows="3"></textarea>
 				</div>
+				<button class="btn btn-outline-light btn-lg">Submit</button>
 			</form>
 		</section>
 		<!-- End of contact me section -->
 		<!-- Start of Footer -->
 		<footer>
-			<div class="container-fluid pad">
+			<div class="container-fluid pad-footer">
 				<div class="row text-center">
 					<div class="col-sm-4">
-						<p>My Logo Here</p>
-						<hr>
-						<p><a href="mailto:noeljohnhementera97@gmail.com"></a>noeljohnhementera97@gmail.com</p>
-						<p><a href="#"></a>044-123-4567</p>
-						<p>Nueva Ecija, Philippines</p>
+						<a href="#"><img src="images/logo-icon.png">Code Branch</a>
+						<hr class="hr-footer">
+						<div class="pb-3">
+							<a href="mailto:noeljohnhementera97@gmail.com">noeljohnhementera97@gmail.com</a>
+						</div>
+						<div class="pb-3">
+							<a href="tel:0441234567" target="_blank">044-123-4567</a>
+						</div>
+						<p class="pb-3">Nueva Ecija, Philippines</p>
 					</div>
 
 					<div class="col-sm-4">
-						<p>Useful Links</p>
-						<hr>
-						<p><a href="#"></a>About Me</p>
-						<p><a href="#"></a>Services</p>
-						<p><a href="#"></a>Reviews</p>
+						<p id="footer-font-size"><strong>Useful Links</strong></p>
+						<hr class="hr-footer">
+						<div class="pb-3">
+							<a href="#">About Me</a>
+						</div>
+						<div class="pb-3">
+						<a href="#">Services</a>
+						</div>
+						<div class="pb-3">
+						<a href="#">Reviews</a>
+						</div>
 					</div>
 
 					<div class="col-sm-4">
-						<p>Let's Connect</p>
-						<hr>
-						<p><a href="#"><img src="#"></a>LinkedIn</p>
-						<p><a href="#"><img src="#"></a>Skype</p>
-						<p><a href="#"><img src="#"></a>Upwork</p>
-					</div>
-
-					<div class="col-12">
-						<hr>
-						<p>&copy; 2021 Noel John Hementera</p>
+						<p id="footer-font-size"><strong>Let's Connect</strong></p>
+						<hr class="hr-footer">
+							<div>
+								<a href="https://join.skype.com/invite/WvcrJ9rdJnMY" target="_blank"><i class="fab fa-skype"></i></a>
+								<a href="https://www.linkedin.com/in/noel-john-hementera-b2a11312b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+							</div>
 					</div>
 				</div>
 			</div>
+								<hr class="hr-copyright">
+								<p class="text-center">&copy; 2021 Noel John Hementera</p>
 		</footer>
 		<!-- End of Footer -->
+
 		<!-- Start of script -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
